@@ -7,15 +7,15 @@ const pizzas = [
     },
     {
         id: 2,
-        nombre: 'Napolitana',
+        nombre: 'Especial',
         precio: 1200,
-        ingredientes: ['Muzza', 'Tomate'],
+        ingredientes: ['Muzza', 'Jamón', 'Morrones'],
     },
     {
         id: 3,
-        nombre: 'Especial',
+        nombre: 'Napolitana',
         precio: 1100,
-        ingredientes: ['Muzza', 'Jamón', 'Morrones'],
+        ingredientes: ['Muzza', 'Tomate'],
     },
     {
         id: 4,
@@ -46,7 +46,9 @@ const pizzas = [
 
 
 // a_
-
+const pizzasPares = pizzas.filter((pizza) => pizza.id % 2 !== 1);
+const imprimirPizzasPares = () => pizzasPares.forEach((pizza) => console.log(`La pizza ${pizza.nombre} es par porque está en la posición ${pizza.id}`));
+imprimirPizzasPares();
 
 
 // b_
@@ -57,15 +59,24 @@ imprimirMenosDe1200();
 
 
 // c_
-const nombrePizzas = pizzas.map(({nombre}) => nombre);
-console.log(nombrePizzas);
+// const nombrePizzas = pizzas.map(({nombre}) => nombre);
+// const imprimirNombrePizzas = () => nombrePizzas.forEach((pizza)=> console.log(`Pizza ${pizza.nombre}`));
+// imprimirNombrePizzas();
+
+const imprimirNombrePizzas = () => pizzas.forEach((pizza)=> console.log(`Pizza ${pizza.nombre}`));
+imprimirNombrePizzas();
 
 
 // d_
-const pizzaPrecio = pizzas.map(({precio}) => precio);
-console.log(pizzaPrecio);
+// const pizzaPrecio = pizzas.map(({precio}) => precio);
+// console.log(pizzaPrecio);
+
+const imprimirPrecioPizzas = () => pizzas.forEach((pizza)=> console.log(`Precio $${pizza.precio}`));
+imprimirPrecioPizzas();
 
 
 // e_
 const imprimirNombreYPrecio = () => pizzas.forEach((pizza) => console.log(`La Pizza ${pizza.nombre} sale $${pizza.precio}`));
 imprimirNombreYPrecio();
+
+

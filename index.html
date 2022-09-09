@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript - Pizzas</title>
-</head>
-<body>
-    <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Pick</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="pick-container">
+      <h1>Pizza Pick 🍕<i class="fa-sharp fa-solid fa-pizza"></i></h1>
+
+      <div class="pizza-list">
+        <ol>
+            <li>1  Muzzarella</li>
+            <li>2  Especial</li>
+            <li>3  Napolitana</li>
+            <li>4  Rúcula</li>
+            <li>5  Cuatro Quesos</li>
+            <li>6  Caprese</li>
+        </ol>
+      </div>
+      <form class="pick-form">
+        <div class="input-container">
+
+          <input
+            type="number"
+            class="input-number"
+            id="numberId"
+            placeholder="Elegí una Pizza"
+          />
+          <small></small>
+        </div>
+        <button type="submit" class="pick-btn">Elegir</button>
+      </form>
+    </section>
+    <div class="card-container">
+        <!-- <div class="pizza-card">
+            <h2>Pediste: Pizza Muzzarella</h2>
+            <h4>$1000</h4>
+            <p>Tiene: Muzza</p>
+        </div> -->
+    </div>
+    
+    <footer class="footer">Hecho por JuliS🐊</footer>
+    <script src="main2.js"></script>
+  </body>
 </html>
